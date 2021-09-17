@@ -3,6 +3,6 @@ import { IUsersRepository } from "../../modules/users/Repositories/IUsersReposit
 import { UsersRepository } from "../../modules/users/Repositories/implementations/UsersRepository";
 
 container.registerSingleton<IUsersRepository>(
-  "UsersRepository",
+  'UsersRepository',
   UsersRepository
 );

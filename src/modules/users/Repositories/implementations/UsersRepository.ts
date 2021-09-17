@@ -6,7 +6,7 @@ import { IUsersRepository } from "../IUsersRepository";
 class UsersRepository implements IUsersRepository{
   private repository: Repository<User>;
 
-  constructor(parameters) {
+  constructor() {
     this.repository = getRepository(User);
   }
   async create({name, email, password }: ICreateUserDTO): Promise<void> {
